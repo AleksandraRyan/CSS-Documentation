@@ -96,6 +96,18 @@ header {
   padding: 10px;
   border-radius: 20px;
 }
+#Img_Gallery header {
+  background-color: rgb(16, 233, 70);
+  width: 30%;
+  padding: 10px;
+  border-radius: 20px;
+}
+#Media_Queries header {
+  background-color: rgb(153, 81, 13);
+  width: 30%;
+  padding: 10px;
+  border-radius: 20px;
+}
 
 #Colors p {
   font-family: var(--secondary-font);
@@ -146,4 +158,10 @@ article li {
 
 .css-example li {
   line-height: 2;
+}
+
+img.absolute-img {
+  width: 40%;
+  display: block;
+  margin: auto;
 }

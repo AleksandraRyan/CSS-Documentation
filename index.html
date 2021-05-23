@@ -17,6 +17,8 @@
         <li><a href="#Colors" class="nav-link">Colors</a></li>
         <li><a href="#Box_Model" class="nav-link">Box Model</a></li>
         <li><a href="#Position" class="nav-link">Position</a></li>
+        <li><a href="#Img_Gallery" class="nav-link">Image Gallery</a></li>
+        <li><a href="#Media_Queries" class="nav-link">Media Queries</a></li>
       </ul>
     </nav>
 
@@ -254,7 +256,7 @@
               Here is the CSS that is used:
             </p>
             <img src="/images/static.PNG" alt="" />
-            <h1>position: relative;</h1>
+            <h3>position: relative;</h3>
             <p>
               An element with position: relative; is positioned relative to its
               normal position.
@@ -268,24 +270,156 @@
               Here is the CSS that is used:
             </p>
             <img src="/images/relative.PNG" alt="" />
-            <h3>The CSS id Selector</h3>
-            <ul>
-              <li>
-                The id selector uses the id attribute of an HTML element to
-                select a specific element.
-              </li>
-
-              <li>
-                The id of an element is unique within a page, so the id selector
-                is used to select one unique element!
-              </li>
-              <li>
-                To select an element with a specific id, write a hash (#)
-                character, followed by the id of the element.
-              </li>
+            <h3>position: fixed;</h3>
+            <p>
+              An element with position: fixed; is positioned relative to the
+              viewport, which means it always stays in the same place even if
+              the page is scrolled. The top, right, bottom, and left properties
+              are used to position the element.
               <br />
-              <img src="/images/css-selector2.PNG" alt="" />
+              A fixed element does not leave a gap in the page where it would
+              normally have been located.
+              <br />
+              Notice the fixed element in the lower-right corner of the page.
+              Here is the CSS that is used:
+            </p>
+            <br />
+            <img src="/images/fixed.PNG" alt="" />
+            <h3>position: absolute;</h3>
+            <p>
+              An element with position: absolute; is positioned relative to the
+              nearest positioned ancestor (instead of positioned relative to the
+              viewport, like fixed).
+              <br />
+              However; if an absolute positioned element has no positioned
+              ancestors, it uses the document body, and moves along with page
+              scrolling.
+            </p>
+            <p>
+              <span style="background-color: yellow; padding: 10px">Note</span>
+              A "positioned" element is one whose position is anything except
+              static.
+            </p>
+            <p>Here is a simple example</p>
+            <img src="/images/absolute2.png" alt="" class="absolute-img" />
+            <br />
+            <p>Here is the CSS that is used</p>
+            <img src="/images/absolute.png" alt="" />
+            <h3>position: sticky;</h3>
+            <p>
+              An element with position: sticky; is positioned based on the
+              user's scroll position.
+            </p>
+            <p>
+              A sticky element toggles between relative and fixed, depending on
+              the scroll position. It is positioned relative until a given
+              offset position is met in the viewport - then it "sticks" in place
+              (like position:fixed).
+            </p>
+            <p style="background-color: yellow; padding: 10px">
+              Note Internet Explorer does not support sticky positioning. Safari
+              requires a -webkit- prefix (see example below). You must also
+              specify at least one of top, right, bottom or left for sticky
+              positioning to work.
+            </p>
+            <p>
+              In this example, the sticky element sticks to the top of the page
+              (top: 0), when you reach its scroll position.
+            </p>
+            <img src="/images/sticky.png" alt="" />
+            <h1>Overlapping Elements</h1>
+            <p>
+              When elements are positioned, they can overlap other elements.
+            </p>
+            <p>
+              The z-index property specifies the stack order of an element
+              (which element should be placed in front of, or behind, the
+              others).
+            </p>
+            <p>An element can have a positive or negative stack order:</p>
+
+            <img src="/images/z-index.png" alt="" class="absolute-img" />
+            <br />
+            <img src="/images/z-index2.png" alt="" />
+            <p>
+              An element with greater stack order is always in front of an
+              element with a lower stack order.
+            </p>
+            <p style="background-color: yellow; padding: 10px">
+              Note: If two positioned elements overlap without a z-index
+              specified, the element positioned last in the HTML code will be
+              shown on top.
+            </p>
+          </div>
+        </article>
+      </section>
+      <hr />
+      <br />
+      <!-- Section 6 -->
+      <section class="main-section" id="Img_Gallery">
+        <header>CSS Image Gallery</header>
+        <article>
+          <div class="css-example">
+            <p>CSS can be used to create an image gallery.</p>
+            <img src="/images/gallery.png" alt="" />
+            <h1>Image Gallery</h1>
+            <p>The following image gallery is created with CSS:</p>
+            <img src="/images/gallery-code.png" alt="" class="absolute-img" />
+            <br />
+          </div>
+        </article>
+      </section>
+      <hr />
+      <br />
+      <!-- Section 7 -->
+      <section class="main-section" id="Media_Queries">
+        <header>CSS Media Queries</header>
+        <article>
+          <div class="css-example">
+            <h1>CSS3 Introduced Media Queries</h1>
+            <p>
+              Media queries in CSS3 extended the CSS2 media types idea: Instead
+              of looking for a type of device, they look at the capability of
+              the device.
+            </p>
+            <p>Media queries can be used to check many things, such as:</p>
+            <ul>
+              <li>width and height of the viewport</li>
+              <li>width and height of the device</li>
+              <li>
+                orientation (is the tablet/phone in landscape or portrait mode?)
+              </li>
+              <li>resolution</li>
             </ul>
+            <p>
+              Using media queries are a popular technique for delivering a
+              tailored style sheet to desktops, laptops, tablets, and mobile
+              phones (such as iPhone and Android phones).
+            </p>
+            <h3>Browser Support</h3>
+            <p>
+              The numbers in the table specifies the first browser version that
+              fully supports the @media rule.
+            </p>
+            <img src="/images/media.png" alt="" />
+            <h3>Media Queries Simple Examples</h3>
+            <p>
+              One way to use media queries is to have an alternate CSS section
+              right inside your style sheet.
+            </p>
+            <p>
+              The following example changes the background-color to lightgreen
+              if the viewport is 480 pixels wide or wider (if the viewport is
+              less than 480 pixels, the background-color will be pink):
+            </p>
+            <img src="/images/media2.png" alt="" />
+            <p>
+              The following example shows a menu that will float to the left of
+              the page if the viewport is 480 pixels wide or wider (if the
+              viewport is less than 480 pixels, the menu will be on top of the
+              content):
+            </p>
+            <img src="/images/media3.png" alt="" />
           </div>
         </article>
       </section>
