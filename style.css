@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@500&display=swap');
+
+:root {
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+}
+
+nav header {
+  font-family: var(--main-font);
+  font-size: 30px;
+  margin: 10px;
+  color: #059862;
+}
+
+.nav-link {
+  display: block;
+  margin: 30px auto;
+  border-top: 2px solid #666;
+  border-bottom: 2px solid #666;
+  padding: 20px;
+  text-decoration: none;
+  font-family: var(--secondary-font);
+  color: #000;
+}
+
+.nav-link:hover {
+  background-color: aliceblue;
+}
+
+/* Main Section */
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+header {
+  font-size: 40px;
+  font-family: var(--main-font);
+  margin-bottom: 20px;
+}
+
+#Introduction header {
+  background-color: rgb(136, 255, 0);
+  width: 25%;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+#Selectors header {
+  background-color: rgb(5, 235, 243);
+  width: 25%;
+  padding: 10px;
+  border-radius: 20px;
+}
+#Colors header {
+  background-color: rgb(219, 36, 243);
+  width: 25%;
+  padding: 10px;
+  border-radius: 20px;
+}
+#Box_Model header {
+  background-color: rgb(207, 7, 67);
+  width: 25%;
+  padding: 10px;
+  border-radius: 20px;
+}
+#Position header {
+  background-color: rgb(241, 245, 24);
+  width: 50%;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+#Colors p {
+  font-family: var(--secondary-font);
+  font-size: 14px;
+  line-height: 2;
+}
+
+#Box_Model p {
+  font-family: var(--secondary-font);
+  font-size: 14px;
+  line-height: 2;
+}
+#Position p {
+  font-family: var(--secondary-font);
+  font-size: 14px;
+  line-height: 2;
+}
+
+article h3 {
+  font-size: 26px;
+  font-family: var(--main-font);
+  margin: 20px 0;
+}
+
+article li {
+  font-family: var(--secondary-font);
+  font-size: 14px;
+  line-height: 2;
+}
+
+.css-example h1 {
+  margin: 20px 0;
+  font-size: 26px;
+  font-family: var(--main-font);
+}
+
+.css-example p {
+  font-family: var(--secondary-font);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.css-example img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 15px;
+}
+
+.css-example li {
+  line-height: 2;
+}

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>CSS Documentation</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <header>CSS Documentation</header>
+      <ul>
+        <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+        <li><a href="#Selectors" class="nav-link">Selectors</a></li>
+        <li><a href="#Colors" class="nav-link">Colors</a></li>
+        <li><a href="#Box_Model" class="nav-link">Box Model</a></li>
+        <li><a href="#Position" class="nav-link">Position</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main -->
+    <main id="main-doc">
+      <!-- Section 1 -->
+      <section class="main-section" id="Introduction">
+        <header>CSS Introduction</header>
+        <article>
+          <h3>What is CSS?</h3>
+          <ul>
+            <li>CSS stands for Cascading Style Sheets</li>
+            <li>
+              CSS describes how HTML elements are to be displayed on screen,
+              paper, or in other media
+            </li>
+            <li>
+              CSS saves a lot of work. It can control the layout of multiple web
+              pages all at once
+            </li>
+            <li>External stylesheets are stored in CSS files</li>
+          </ul>
+          <div class="css-example">
+            <h1>Why Use CSS?</h1>
+            <p>
+              CSS is used to define styles for your web pages, including the
+              design, layout and variations in display for different devices and
+              screen sizes.
+            </p>
+            <img src="/images/css.PNG" alt="" />
+            <h3>CSS Solved a Big Problem</h3>
+            <ul>
+              <li>
+                HTML was NEVER intended to contain tags for formatting a web
+                page!
+              </li>
+
+              <li>
+                HTML was created to describe the content of a web page, like:
+              </li>
+              <li>
+                When tags like <em>font</em>, and color attributes were added to
+                the HTML 3.2 specification, it started a nightmare for web
+                developers. Development of large websites, where fonts and color
+                information were added to every single page, became a long and
+                expensive process.
+              </li>
+              <li>
+                To solve this problem, the World Wide Web Consortium (W3C)
+                created CSS. <br />
+                CSS removed the style formatting from the HTML page!
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <hr />
+      <br />
+      <!-- Section 2 -->
+      <section class="main-section" id="Selectors">
+        <header>CSS Selectors</header>
+        <article>
+          <h3>CSS Selectors</h3>
+          <ul>
+            <li>Simple selectors (select elements based on name, id, class)</li>
+            <li>
+              <a href="https://www.w3schools.com/css/css_combinators.asp">
+                Combinator selectors</a
+              >
+              (select elements based on a specific relationship between them)
+            </li>
+            <li>
+              <a href="https://www.w3schools.com/css/css_pseudo_classes.asp">
+                Pseudo-class selectors</a
+              >
+              (select elements based on a certain state)
+            </li>
+            <li>
+              <a href="https://www.w3schools.com/css/css_pseudo_elements.asp">
+                Pseudo-elements selectors</a
+              >
+              (select and style a part of an element)
+            </li>
+            <li>
+              <a
+                href="https://www.w3schools.com/css/css_attribute_selectors.asp"
+              >
+                Attribute selectors</a
+              >
+              (select elements based on an attribute or attribute value)
+            </li>
+          </ul>
+          <div class="css-example">
+            <h1>The CSS element Selector</h1>
+            <p>
+              The element selector selects HTML elements based on the element
+              name.
+            </p>
+            <img src="/images/css-selector.PNG" alt="" />
+            <h3>The CSS id Selector</h3>
+            <ul>
+              <li>
+                The id selector uses the id attribute of an HTML element to
+                select a specific element.
+              </li>
+
+              <li>
+                The id of an element is unique within a page, so the id selector
+                is used to select one unique element!
+              </li>
+              <li>
+                To select an element with a specific id, write a hash (#)
+                character, followed by the id of the element.
+              </li>
+              <br />
+              <img src="/images/css-selector2.PNG" alt="" />
+            </ul>
+          </div>
+        </article>
+      </section>
+      <hr />
+      <br />
+      <!-- Section 3 -->
+      <section class="main-section" id="Colors">
+        <header>CSS Colors</header>
+        <article>
+          <p>
+            Colors are specified using predefined color names, or RGB, HEX, HSL,
+            RGBA, HSLA values.
+          </p>
+          <h3>CSS Color Names</h3>
+          <p>
+            In CSS, a color can be specified by using a predefined color name:
+          </p>
+          <img src="/images/colors.PNG" alt="" />
+          <div class="css-example">
+            <h1>CSS Background Color</h1>
+            <p>You can set the background color for HTML elements:</p>
+            <img src="/images/css-bg-colors.PNG" alt="" />
+            <h3>CSS Color Values</h3>
+            <p>
+              In CSS, colors can also be specified using RGB values, HEX values,
+              HSL values, RGBA values, and HSLA values:
+            </p>
+            <img src="/images/css-colors2.PNG" alt="" />
+          </div>
+        </article>
+      </section>
+      <hr />
+      <br />
+      <!-- Section 4 -->
+      <section class="main-section" id="Box_Model">
+        <header>CSS Box Model</header>
+        <article>
+          <h3>The CSS Box Model</h3>
+          <p>All HTML elements can be considered as boxes.</p>
+          <p>
+            In CSS, the term "box model" is used when talking about design and
+            layout.
+          </p>
+          <p>
+            The CSS box model is essentially a box that wraps around every HTML
+            element. It consists of: margins, borders, padding, and the actual
+            content. The image below illustrates the box model:
+          </p>
+          <br />
+          <img src="/images/box_model.PNG" alt="" />
+          <div class="css-example">
+            <p>Explanation of the different parts:</p>
+            <ul>
+              <li>
+                Content - The content of the box, where text and images appear
+              </li>
+              <li>
+                Padding - Clears an area around the content. The padding is
+                transparent
+              </li>
+              <li>
+                Border - A border that goes around the padding and content
+              </li>
+              <li>
+                Margin - Clears an area outside the border. The margin is
+                transparent
+              </li>
+              <br />
+              <p>
+                The box model allows us to add a border around elements, and to
+                define space between elements.
+              </p>
+              <br />
+              <img src="/images/box_model2.PNG" alt="" />
+            </ul>
+          </div>
+        </article>
+      </section>
+      <hr />
+      <br />
+      <!-- Section 5 -->
+      <section class="main-section" id="Position">
+        <header>CSS Layout - The position Property</header>
+        <article>
+          <h3>The position Property</h3>
+          <p>
+            The position property specifies the type of positioning method used
+            for an element.
+          </p>
+          <p>There are five different position values:</p>
+          <br />
+          <ul>
+            <li>static</li>
+            <li>relative</li>
+            <li>fixed</li>
+            <li>absolute</li>
+            <li>sticky</li>
+          </ul>
+          <br />
+          <p>
+            Elements are then positioned using the top, bottom, left, and right
+            properties. However, these properties will not work unless the
+            position property is set first. They also work differently depending
+            on the position value.
+          </p>
+          <div class="css-example">
+            <h1>position: static;</h1>
+            <p>
+              HTML elements are positioned static by default.
+              <br />
+              Static positioned elements are not affected by the top, bottom,
+              left, and right properties.
+              <br />
+              An element with position: static; is not positioned in any special
+              way; it is always positioned according to the normal flow of the
+              page.
+              <br />
+              Here is the CSS that is used:
+            </p>
+            <img src="/images/static.PNG" alt="" />
+            <h1>position: relative;</h1>
+            <p>
+              An element with position: relative; is positioned relative to its
+              normal position.
+              <br />
+              Setting the top, right, bottom, and left properties of a
+              relatively-positioned element will cause it to be adjusted away
+              from its normal position. Other content will not be adjusted to
+              fit into any gap left by the element.
+
+              <br />
+              Here is the CSS that is used:
+            </p>
+            <img src="/images/relative.PNG" alt="" />
+            <h3>The CSS id Selector</h3>
+            <ul>
+              <li>
+                The id selector uses the id attribute of an HTML element to
+                select a specific element.
+              </li>
+
+              <li>
+                The id of an element is unique within a page, so the id selector
+                is used to select one unique element!
+              </li>
+              <li>
+                To select an element with a specific id, write a hash (#)
+                character, followed by the id of the element.
+              </li>
+              <br />
+              <img src="/images/css-selector2.PNG" alt="" />
+            </ul>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
