@@ -14,11 +14,10 @@
       <ul>
         <li><a href="#Introduction" class="nav-link">Introduction</a></li>
         <li><a href="#Selectors" class="nav-link">Selectors</a></li>
-        <li><a href="#Colors" class="nav-link">Colors</a></li>
         <li><a href="#Box_Model" class="nav-link">Box Model</a></li>
         <li><a href="#Position" class="nav-link">Position</a></li>
-        <li><a href="#Img_Gallery" class="nav-link">Image Gallery</a></li>
         <li><a href="#Media_Queries" class="nav-link">Media Queries</a></li>
+        <li><a href="#Reference" class="nav-link">Reference</a></li>
       </ul>
     </nav>
 
@@ -48,7 +47,14 @@
               design, layout and variations in display for different devices and
               screen sizes.
             </p>
-            <img src="/images/css.PNG" alt="" />
+
+            <p class="code-samples">
+              body { background-color: lightblue; }
+              <br />
+              h1 { color: white; text-align: center; }
+              <br />
+              p { font-family: verdana; font-size: 20px; }
+            </p>
             <h3>CSS Solved a Big Problem</h3>
             <ul>
               <li>
@@ -117,7 +123,7 @@
               The element selector selects HTML elements based on the element
               name.
             </p>
-            <img src="/images/css-selector.PNG" alt="" />
+            <p class="code-samples">p { text-align: center; color: red; }</p>
             <h3>The CSS id Selector</h3>
             <ul>
               <li>
@@ -134,42 +140,21 @@
                 character, followed by the id of the element.
               </li>
               <br />
-              <img src="/images/css-selector2.PNG" alt="" />
+              <p class="code-samples">
+                #para1
+                <br />
+                { text-align: center; color: red; }
+              </p>
             </ul>
           </div>
         </article>
       </section>
       <hr />
       <br />
-      <!-- Section 3 -->
-      <section class="main-section" id="Colors">
-        <header>CSS Colors</header>
-        <article>
-          <p>
-            Colors are specified using predefined color names, or RGB, HEX, HSL,
-            RGBA, HSLA values.
-          </p>
-          <h3>CSS Color Names</h3>
-          <p>
-            In CSS, a color can be specified by using a predefined color name:
-          </p>
-          <img src="/images/colors.PNG" alt="" />
-          <div class="css-example">
-            <h1>CSS Background Color</h1>
-            <p>You can set the background color for HTML elements:</p>
-            <img src="/images/css-bg-colors.PNG" alt="" />
-            <h3>CSS Color Values</h3>
-            <p>
-              In CSS, colors can also be specified using RGB values, HEX values,
-              HSL values, RGBA values, and HSLA values:
-            </p>
-            <img src="/images/css-colors2.PNG" alt="" />
-          </div>
-        </article>
-      </section>
+
       <hr />
       <br />
-      <!-- Section 4 -->
+      <!-- Section 3 -->
       <section class="main-section" id="Box_Model">
         <header>CSS Box Model</header>
         <article>
@@ -185,7 +170,7 @@
             content. The image below illustrates the box model:
           </p>
           <br />
-          <img src="/images/box_model.PNG" alt="" />
+
           <div class="css-example">
             <p>Explanation of the different parts:</p>
             <ul>
@@ -209,14 +194,25 @@
                 define space between elements.
               </p>
               <br />
-              <img src="/images/box_model2.PNG" alt="" />
+              <p class="code-samples">
+                div
+                <br />
+                { background-color: lightgrey;
+                <br />
+                width: 300px;
+                <br />
+                border: 15px solid green;
+                <br />
+                padding: 50px; <br />
+                margin: 20px; }
+              </p>
             </ul>
           </div>
         </article>
       </section>
       <hr />
       <br />
-      <!-- Section 5 -->
+      <!-- Section 4 -->
       <section class="main-section" id="Position">
         <header>CSS Layout - The position Property</header>
         <article>
@@ -255,7 +251,13 @@
               <br />
               Here is the CSS that is used:
             </p>
-            <img src="/images/static.PNG" alt="" />
+            <p class="code-samples">
+              div.static
+              <br />
+              { position: static;
+              <br />
+              border: 3px solid #73AD21; }
+            </p>
             <h3>position: relative;</h3>
             <p>
               An element with position: relative; is positioned relative to its
@@ -269,7 +271,14 @@
               <br />
               Here is the CSS that is used:
             </p>
-            <img src="/images/relative.PNG" alt="" />
+            <p class="code-samples">
+              div.relative
+              <br />
+              { position: relative;
+              <br />
+              left: 30px; <br />
+              border: 3px solid #73AD21; }
+            </p>
             <h3>position: fixed;</h3>
             <p>
               An element with position: fixed; is positioned relative to the
@@ -284,7 +293,13 @@
               Here is the CSS that is used:
             </p>
             <br />
-            <img src="/images/fixed.PNG" alt="" />
+            <p class="code-samples">
+              div.fixed <br />{ position: fixed; <br />
+              bottom: 0; <br />
+              right: 0; <br />
+              width: 300px; <br />
+              border: 3px solid #73AD21; }
+            </p>
             <h3>position: absolute;</h3>
             <p>
               An element with position: absolute; is positioned relative to the
@@ -301,10 +316,21 @@
               static.
             </p>
             <p>Here is a simple example</p>
-            <img src="/images/absolute2.png" alt="" class="absolute-img" />
             <br />
             <p>Here is the CSS that is used</p>
-            <img src="/images/absolute.png" alt="" />
+            <p class="code-samples">
+              div.relative
+              <br />{ position: relative;<br />
+              width: 400px;<br />
+              height: 200px;<br />
+              border: 3px solid #73AD21; } <br />
+              div.absolute <br />{ position: absolute;<br />
+              top: 80px;<br />
+              right: 0;<br />
+              width: 200px;<br />
+              height: 100px;<br />
+              border: 3px solid #73AD21; }
+            </p>
             <h3>position: sticky;</h3>
             <p>
               An element with position: sticky; is positioned based on the
@@ -326,7 +352,16 @@
               In this example, the sticky element sticks to the top of the page
               (top: 0), when you reach its scroll position.
             </p>
-            <img src="/images/sticky.png" alt="" />
+            <p class="code-samples">
+              div.sticky
+              <br />
+              { position: -webkit-sticky;<br />
+              position: sticky;<br />
+              top: 0;<br />
+              padding: 5px;<br />
+              background-color: #cae8ca;<br />
+              border: 2px solid #4CAF50; }
+            </p>
             <h1>Overlapping Elements</h1>
             <p>
               When elements are positioned, they can overlap other elements.
@@ -338,9 +373,14 @@
             </p>
             <p>An element can have a positive or negative stack order:</p>
 
-            <img src="/images/z-index.png" alt="" class="absolute-img" />
             <br />
-            <img src="/images/z-index2.png" alt="" />
+            <p class="code-samples">
+              img <br />
+              { position: absolute; <br />
+              left: 0px; <br />
+              top: 0px; <br />
+              z-index: -1; }
+            </p>
             <p>
               An element with greater stack order is always in front of an
               element with a lower stack order.
@@ -355,23 +395,8 @@
       </section>
       <hr />
       <br />
-      <!-- Section 6 -->
-      <section class="main-section" id="Img_Gallery">
-        <header>CSS Image Gallery</header>
-        <article>
-          <div class="css-example">
-            <p>CSS can be used to create an image gallery.</p>
-            <img src="/images/gallery.png" alt="" />
-            <h1>Image Gallery</h1>
-            <p>The following image gallery is created with CSS:</p>
-            <img src="/images/gallery-code.png" alt="" class="absolute-img" />
-            <br />
-          </div>
-        </article>
-      </section>
-      <hr />
-      <br />
-      <!-- Section 7 -->
+
+      <!-- Section 5 -->
       <section class="main-section" id="Media_Queries">
         <header>CSS Media Queries</header>
         <article>
@@ -396,12 +421,7 @@
               tailored style sheet to desktops, laptops, tablets, and mobile
               phones (such as iPhone and Android phones).
             </p>
-            <h3>Browser Support</h3>
-            <p>
-              The numbers in the table specifies the first browser version that
-              fully supports the @media rule.
-            </p>
-            <img src="/images/media.png" alt="" />
+
             <h3>Media Queries Simple Examples</h3>
             <p>
               One way to use media queries is to have an alternate CSS section
@@ -412,14 +432,45 @@
               if the viewport is 480 pixels wide or wider (if the viewport is
               less than 480 pixels, the background-color will be pink):
             </p>
-            <img src="/images/media2.png" alt="" />
+            <p class="code-samples">
+              @media screen and (min-width: 480px) <br />
+              {
+              <br />
+              body { background-color: lightgreen; } <br />
+              }
+            </p>
             <p>
               The following example shows a menu that will float to the left of
               the page if the viewport is 480 pixels wide or wider (if the
               viewport is less than 480 pixels, the menu will be on top of the
               content):
             </p>
-            <img src="/images/media3.png" alt="" />
+            <p class="code-samples">
+              @media screen and (min-width: 480px) {
+              <br />
+              #leftsidebar {<br />
+              width: 200px; <br />
+              float: left;} <br />
+              #main {<br />
+              margin-left: 216px;} <br />
+              }
+            </p>
+          </div>
+        </article>
+      </section>
+      <!-- Section 6 -->
+      <section class="main-section" id="Reference">
+        <article>
+          <div class="css-examples">
+            <header>Reference</header>
+            <ul>
+              <li>
+                All the documentation in this page is taken from
+                <a href="https://www.w3schools.com/" target="_blank"
+                  >W3 Schools</a
+                >
+              </li>
+            </ul>
           </div>
         </article>
       </section>

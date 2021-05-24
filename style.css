@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;200&family=Roboto:wght@500&display=swap');
 
 :root {
   --main-font: 'Roboto', sans-serif;
@@ -13,6 +13,14 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.code-samples {
+  background-color: #666;
+  display: inline-block;
+  padding: 10px;
+  color: aliceblue;
+  line-height: 2;
 }
 
 /* Navbar */
@@ -78,33 +86,28 @@ header {
   padding: 10px;
   border-radius: 20px;
 }
-#Colors header {
-  background-color: rgb(219, 36, 243);
-  width: 25%;
-  padding: 10px;
-  border-radius: 20px;
-}
-#Box_Model header {
-  background-color: rgb(207, 7, 67);
-  width: 25%;
-  padding: 10px;
-  border-radius: 20px;
-}
+
 #Position header {
   background-color: rgb(241, 245, 24);
   width: 50%;
   padding: 10px;
   border-radius: 20px;
 }
-#Img_Gallery header {
-  background-color: rgb(16, 233, 70);
-  width: 30%;
+#Box_Model header {
+  background-color: rgb(241, 245, 24);
+  width: 50%;
   padding: 10px;
   border-radius: 20px;
 }
 #Media_Queries header {
-  background-color: rgb(153, 81, 13);
-  width: 30%;
+  background-color: rgb(241, 245, 24);
+  width: 50%;
+  padding: 10px;
+  border-radius: 20px;
+}
+#Reference header {
+  background-color: rgb(8, 182, 153);
+  width: 50%;
   padding: 10px;
   border-radius: 20px;
 }
@@ -164,4 +167,31 @@ img.absolute-img {
   width: 40%;
   display: block;
   margin: auto;
+}
+
+@media (max-width: 768px) {
+  #navbar {
+    min-width: 150px;
+  }
+
+  .main-section header {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  #Selectors header {
+    background-color: rgb(5, 235, 243);
+    width: 70%;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  #Introduction header {
+    background-color: rgb(5, 235, 243);
+    width: 70%;
+    padding: 10px;
+    border-radius: 20px;
+  }
 }
